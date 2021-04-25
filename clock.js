@@ -36,7 +36,7 @@ function setTime(){
     minutesEl.style.transform =`translate(-50%, -100%) rotate(${scale(minute,0,59,0,360)}deg)`;
     secondsEl.style.transform =`translate(-50%, -100%) rotate(${scale(seconds,0,59,0,360)}deg)`;
 
-    timeEl.innerHTML =`${hourtoshow}:${minute < 10 ? `0 ${minute}`:minute} ${ ampm}`;
+    timeEl.innerHTML =`${hourtoshow}:${minute < 10 ? `0${minute}`:minute} ${ ampm}`;
 
     dateEl.innerHTML =`${days[day]} ${months[month]} ${date}`
 
